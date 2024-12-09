@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:wght@100&display=swap');
+
+body {
+    margin-left: 200px;
+}
+
+.title {
+    text-align: center;
+    color:#000000;
+    font-family: Roboto;
+}
+
+.nav {
+    border: 1px solid #cccccc;
+    border-width: 1px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 10px;
+    color: red;
+}
+
+/* main content small screen div box */
+.main-content {
+    width: 100%;
+    height: 55vh;
+    background:rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    text-align: center;
+    margin: 50px auto!important;
+    display: block;
+    font-family: Roboto;
+    
+}
+
+/* live wallpaper background image */
+.vid-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('../media/nfsBackground.gif');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Roboto;
+}
+
+.sidenav a {
+    padding: 12px 0;
+    margin-left: 18px;
+    text-decoration: none;
+    font-size: 28px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+@media screen and (min-width: 900px) {
+    .main-content {
+        width: 70%;
+        height: 550px;
+    }
+
+    .form-container {
+        background-color: #c6c600;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    input[type=text], input[type=email], input[type=tel], select, textarea {
+        width: 70%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid;
+        border-radius: 4px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    input[type=submit] {
+        width: 50%;
+        background-color: #000000;
+        color: white;
+        padding: 14px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 15%;
+        display: inline;
+        text-align: center;
+    }
+
+    input[type=submit]:hover {
+        background-color: #808080;
+    } 
+
+    footer {
+        text-align: center;
+        font-family: Roboto;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        margin-left: 0;
+        margin-top: 150px;
+    }
+
+    .sidenav {
+        width: 100%;
+        height: 150px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .sidenav a {
+        margin: 0;
+        align-self: center;
+        font-size: 22px;
+    }
+}
