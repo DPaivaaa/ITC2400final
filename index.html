@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <link href="./stylesheets/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFS Unbound</title>
+</head>
+
+<body>
+    <div>
+        <nav class="sidenav">
+            <a href="./index.html">Home</a>
+            <a href="./pages/modes.html">Modes</a>
+            <a href="./pages/customization.html">Customization</a>
+            <a href="./pages/gameplay.html">Gameplay</a>
+            <a href="./pages/forms.html">Form</a>
+            <a href="https://www.ea.com/games/need-for-speed/need-for-speed-unbound" class="active" target="_blank">Buy Now</a>
+        </nav>
+    </div>
+
+    <div>
+        <h1 class="title">NFS Unbound</h1>
+    </div>
+
+    <div class="vid-container">
+        <div class="main-content">
+            <h1>About the Game</h1>
+            <p class="intro-content">
+                Need for Speed Unbound is a thrilling street racing game that pushes the limits of 
+                speed, style, and strategy. Set in the vibrant open world of Lakeshore City, players 
+                can dive into an immersive single-player campaign or test their skills against others 
+                in competitive online multiplayer. With stunning visuals, customizable cars, and 
+                high-stakes races, the game offers a unique blend of adrenaline-pumping action and 
+                artistic flair. Whether you're mastering tight turns, outsmarting the cops, or 
+                showcasing your creativity through vehicle customization, Need for Speed Unbound 
+                delivers an unforgettable racing experience.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <br>
+        Copyright 2024 Daniel Paiva
+        <br>
+        <a href="mailto:mail@chezfur.com">
+            mail@nfs.com
+        </a>
+
+        <p>Current Date: <span id="currentDate"></span></p>
+
+        <script>
+            const today = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            const formattedDate = today.toLocaleDateString(undefined, options);
+            document.getElementById('currentDate').textContent = formattedDate;
+        </script>
+    </footer>
+</body>
+</html>

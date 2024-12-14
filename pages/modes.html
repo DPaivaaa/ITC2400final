@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+    <link href="./../stylesheets/style.css" rel="stylesheet">
+    <link href="./../stylesheets/modes.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFS Unbound</title>
+</head>
+
+<body>
+    <div>
+        <nav class="sidenav">
+            <a href="./../index.html">Home</a>
+            <a href="./modes.html">Modes</a>
+            <a href="./customization.html">Customization</a>
+            <a href="./gameplay.html">Gameplay</a>
+            <a href="./forms.html">Form</a>
+            <a href="https://www.ea.com/games/need-for-speed/need-for-speed-unbound" class="active" target="_blank">Buy Now</a>
+        </nav>
+    </div>
+
+    <div>
+        <h1 class="title">Modes</h1>
+    </div>
+    
+    <div class="background-wrap">
+        <div class="modes-wrapper">
+            <div class="card">
+                <h2 class="content-header">Campaign</h1>
+                <p class="content">
+                    In the campaign mode of Need for Speed Unbound, players embark 
+                    on an adrenaline-fueled journey through the fictional streets of 
+                    Lakeshore City. The story centers around high-stakes street 
+                    racing, where players build their reputation, earn cash, and 
+                    customize their dream cars. Along the way, they must outsmart 
+                    rival racers and evade the relentless police. The campaign is 
+                    structured around weekly qualifiers leading to the ultimate 
+                    racing showdown, offering an engaging mix of narrative progression 
+                    and intense gameplay. Each decision, whether upgrading your car or 
+                    managing your winnings shapes your path to becoming the ultimate 
+                    street racing champion.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2 class="content-header">Online</h1>
+                <p class="content">
+                    The online mode of Need for Speed Unbound offers a dynamic and 
+                    competitive multiplayer experience, setting it apart from the 
+                    narrative-driven campaign. In this mode, players join an open 
+                    world shared with others, engaging in spontaneous races, 
+                    challenges, and collaborations. Unlike the campaign, the online 
+                    version focuses less on story and more on player interaction, 
+                    customization, and skill. Progression in the online mode involves 
+                    earning currency to upgrade and personalize vehicles while competing 
+                    for leaderboard spots and bragging rights. The absence of police chases 
+                    during free roam creates a more relaxed environment for exploration, 
+                    but races still deliver the thrill of intense competition.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <br>
+        Copyright 2024 Daniel Paiva
+        <br>
+        <a href="mailto:mail@nfs.com">
+            mail@nfs.com
+        </a>
+
+        <p>Current Date: <span id="currentDate"></span></p>
+
+        <script>
+            const today = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            const formattedDate = today.toLocaleDateString(undefined, options);
+            document.getElementById('currentDate').textContent = formattedDate;
+        </script>
+    </footer>
+</body>
+</html>

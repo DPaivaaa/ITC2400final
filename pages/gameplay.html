@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <link href="../stylesheets/style.css" rel="stylesheet">
+    <script src="../scripts/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFS Unbound</title>
+</head>
+
+<body>
+    <div>
+        <h1 class="title">Gameplay</h1>
+    </div>
+
+    <div>
+        <nav class="sidenav">
+            <a href="../index.html">Home</a>
+            <a href="./modes.html">Modes</a>
+            <a href="./customization.html">Customization</a>
+            <a href="./gameplay.html">Gameplay</a>
+            <a href="./forms.html">Form</a>
+            <a href="https://www.ea.com/games/need-for-speed/need-for-speed-unbound" class="active" target="_blank">Buy Now</a>
+        </nav>
+    </div>
+
+    <div>
+        <video autoplay controls>
+            <source src="../media/nfsGameplay.mp4" type="video/mp4" >
+        </video>
+    </div>
+
+    <footer>
+        <!--
+        computer was too slow to record my own gameplay so i cited this video
+        in the pop up and in the footer
+        -->
+        <p>
+            <a href="https://www.youtube.com/watch?v=7hcSVFYfcOA" target="_blank">
+                Shirrako
+            </a>
+        </p>
+        <br>
+        Copyright 2024 Daniel Paiva
+        <br>
+        <a href="mailto:mail@chezfur.com">
+            mail@nfs.com
+        </a>
+
+        <p>Current Date: <span id="currentDate"></span></p>
+
+        <script>
+            const today = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            const formattedDate = today.toLocaleDateString(undefined, options);
+            document.getElementById('currentDate').textContent = formattedDate;
+        </script>
+    </footer>
+</body>
+</html>

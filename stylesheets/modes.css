@@ -1,0 +1,91 @@
+body {
+    margin-left: 0 16px;
+}
+
+.modes-wrapper {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+}
+
+.card {
+    background:rgba(255, 255, 255, 0.6);
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-family: contentFont;
+}
+
+.content {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.content-header {
+    text-align: center;
+    font-family: headFont;
+    font-size: 32px;
+}
+
+.background-wrap {
+    background-image: url(../images/modesBackground.jpg);
+    /* https://store.steampowered.com/app/2566540/Need_for_Speed_Unbound__Vol4_CatchUp_Pack/ */
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 90%;
+    background-size: cover;
+    background-position: bottom;
+}
+
+
+/* large screen styling */
+@media screen and (min-width: 900px) {
+    .modes-wrapper {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 0 50px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .card {
+        background:rgba(255, 255, 255, 0.7);
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        font-family: contentFont;
+    }
+    
+    .content {
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+    
+    .content-header {
+        text-align: center;
+        font-family: headFont;
+        font-size: 32px;
+    }
+
+    .background-wrap {
+        background-image: url(../images/modesBackground.jpg);
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 90%;
+        background-size: cover;
+        background-position: bottom;
+    }
+}

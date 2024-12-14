@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <link href="../stylesheets/style.css" rel="stylesheet">
+    <link href="./../stylesheets/forms.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFS Unbound</title>
+</head>
+
+<body>
+    <div>
+        <h1 class="title">Form</h1>
+    </div>
+
+    <div>
+        <nav class="sidenav">
+            <a href="../index.html">Home</a>
+            <a href="./modes.html">Modes</a>
+            <a href="./customization.html">Customization</a>
+            <a href="./gameplay.html">Gameplay</a>
+            <a href="./forms.html">Form</a>
+            <a href="https://www.ea.com/games/need-for-speed/need-for-speed-unbound" class="active" target="_blank">Buy Now</a>
+        </nav>
+    </div>
+
+    <div class="form-wrapper">
+        <div class="main-content">
+            <p class="form-header">
+                Curious in playing the game?
+            </p>
+
+            <div class="form-container">
+                <form method="POST" action="https://webdevbasics.net/scripts/demo.php" >
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="Name"> <br> <br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="E-mail" placeholder="nfs@gmail.com"> <br> <br>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="Phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> <br> <br>
+                    <label for="contact">Preferred Contact:</label>
+
+                    <select name="Contact" id="contact">
+                        <option value="emailme">Email</option>
+                        <option value="phone1">Text</option>
+                    </select>
+
+                    <p>
+                        <label for="questions">Questions?</label>
+                    </p>
+                    
+                    <textarea id="questions" name="Questions" rows="5" cols="50"></textarea> <br> <br>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
